@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 59px;
-  background-color: #f0f2f5;
+  background-color: #0d1117;
   padding: 10px 16px;
   display: flex;
   align-items: center;
@@ -27,6 +27,7 @@ export const UserInfo = styled.div`
 
 export const NameContent = styled.div`
   display: grid;
+  color: #fff;
 `;
 
 export const Name = styled.span`
@@ -50,7 +51,7 @@ export const Options = styled.div`
   svg {
     width: 24px;
     height: 24px;
-    color: #54656f;
+    color: #fff;
     cursor: pointer;
   }
 `;

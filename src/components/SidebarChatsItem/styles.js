@@ -8,7 +8,7 @@ export const Container = styled.div`
   cursor: pointer;
 
   &:hover {
-    background-color: #f0f2f5;
+    background-color: #161b22;
   }
 
   svg {
@@ -21,7 +21,7 @@ export const Container = styled.div`
   }
 
   &.active {
-    background-color: #f0f2f5;
+    background-color: #161b22;
   }
 `;
 

@@ -1,15 +1,14 @@
 import React from 'react';
 import * as C from './styles';
-import { MdMessage } from 'react-icons/md';
+import { BsGithub } from 'react-icons/bs';
 
 const Default = () => {
    return (
      <C.Container>
-       <MdMessage />
-       <C.Title>Chat App</C.Title>
+       <BsGithub />
+       <C.Title>GitHub Chat</C.Title>
        <C.Info>
-         Agora você pode enviar e receber mensagens sem precisar manter seu
-         celular conectado à internet.
+         Um chat inspirado no GitHub!
        </C.Info>
      </C.Container>
    );

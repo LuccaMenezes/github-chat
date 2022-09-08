@@ -10,26 +10,26 @@ import Chat from './components/Chat';
 const App = () => {
    const [user, loading] = useAuthState(auth);
    const [userChat, setUserChat] = useState(null);
-   
+ 
    useEffect(() => {
-      if (user) {
-         db.collection("users").doc(user.uid).set({
-            email: user.email,
-            photoURL: user.photoURL,
-         });
-      }
+     if (user) {
+       db.collection("users").doc(user.uid).set({
+         email: user.email,
+         photoURL: user.photoURL,
+       });
+     }
    }, [user]);
-
+ 
    if (loading) return <Loading />;
-
+ 
    if (!user) return <Login />;
-
-   return(
-      <C.Container>
-         <Sidebar setUserChat={setUserChat} userChat={userChat}  />
-         <Chat userChat={userChat} />
-      </C.Container>
-      );
-};
-
-export default App;
+ 
+   return (
+     <C.Container>
+       <Sidebar setUserChat={setUserChat} userChat={userChat} />
+       <Chat userChat={userChat} />
+     </C.Container>
+   );
+ };
+ 
+ export default App;
